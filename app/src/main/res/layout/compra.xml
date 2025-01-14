@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewMecadoDI2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Mercado DI"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPanaderia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="160dp"
+        android:text="Panaderia"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMecadoDI2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMecadoDI2" />
+
+    <Button
+        android:id="@+id/buttonPescaderia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Pescaderia"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPanaderia"
+        app:layout_constraintStart_toEndOf="@+id/buttonPanaderia"
+        app:layout_constraintTop_toTopOf="@+id/buttonPanaderia" />
+
+    <Button
+        android:id="@+id/buttonFruteria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Fruteria"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPescaderia"
+        app:layout_constraintStart_toEndOf="@+id/buttonPescaderia"
+        app:layout_constraintTop_toTopOf="@+id/buttonPescaderia" />
+
+    <Button
+        android:id="@+id/buttonCarniceria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Carniceria"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintStart_toStartOf="@+id/buttonPanaderia"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPanaderia" />
+
+    <Button
+        android:id="@+id/buttonCharchuteria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Charchuteria"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonCarniceria"
+        app:layout_constraintStart_toEndOf="@+id/buttonCarniceria"
+        app:layout_constraintTop_toTopOf="@+id/buttonCarniceria" />
+
+    <Button
+        android:id="@+id/buttonConservas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Conservas"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonCharchuteria"
+        app:layout_constraintStart_toEndOf="@+id/buttonCharchuteria"
+        app:layout_constraintTop_toTopOf="@+id/buttonCharchuteria" />
+
+    <Button
+        android:id="@+id/buttonPerfumeria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Perfumeria"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintStart_toStartOf="@+id/buttonCarniceria"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCarniceria" />
+
+    <Button
+        android:id="@+id/buttonGeneral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="General"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPerfumeria"
+        app:layout_constraintStart_toEndOf="@+id/buttonPerfumeria"
+        app:layout_constraintTop_toTopOf="@+id/buttonPerfumeria" />
+
+    <Button
+        android:id="@+id/buttonTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Todo"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGeneral"
+        app:layout_constraintStart_toEndOf="@+id/buttonGeneral"
+        app:layout_constraintTop_toTopOf="@+id/buttonGeneral" />
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="409dp"
+        android:layout_height="486dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGeneral" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

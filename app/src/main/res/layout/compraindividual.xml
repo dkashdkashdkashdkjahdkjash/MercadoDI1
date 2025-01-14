@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewMecadoDI2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Mercado DI"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="200dp"
+        android:text="Nombre: "
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMecadoDI2" />
+
+    <TextView
+        android:id="@+id/textViewCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cantidad: 1"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintStart_toStartOf="@+id/textViewNombre"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombre" />
+
+    <SeekBar
+        android:id="@+id/seekBarCantidad"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCantidad" />
+
+    <TextView
+        android:id="@+id/textViewMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="1"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintEnd_toStartOf="@+id/seekBarCantidad"
+        app:layout_constraintStart_toStartOf="@+id/seekBarCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarCantidad" />
+
+    <TextView
+        android:id="@+id/textViewMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="99"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarCantidad"
+        app:layout_constraintStart_toEndOf="@+id/seekBarCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarCantidad" />
+
+    <Switch
+        android:id="@+id/switchUrgente"
+        android:layout_width="137dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Urgente"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCantidad" />
+
+    <Button
+        android:id="@+id/buttonAñadirCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:text="Añadir al carro"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMecadoDI2" />
+
+    <TextView
+        android:id="@+id/textViewNombre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="nombre aqui"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNombre"
+        app:layout_constraintStart_toEndOf="@+id/textViewNombre"
+        app:layout_constraintTop_toTopOf="@+id/textViewNombre" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
